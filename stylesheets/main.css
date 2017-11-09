@@ -1,0 +1,44 @@
+			body {
+				font-family: "arial narrow";
+				text-align: center;
+				background-image: url("../images/background.jpeg");
+				background-size: cover;
+				background-position: right;
+			}
+			header {
+				background: rgba(255, 255, 255, 0.3);
+				padding: 10px 0 0 0;
+				text-align: center;
+				font-family: Arial;
+				color: black;
+			}
+			header p {
+				font-family: 'Fredericka the Great', cursive;
+				font-size: 48px;
+			}
+			.nav {
+				background: rgba(255, 255, 255, 0.3);
+				padding: 10px;
+			}
+			.nav a {
+				padding: 10px 20px 10px 20px;
+				text-decoration: none;
+				font-family: 'Amatic SC', cursive;
+				color: black;
+				font-size: 30px;
+			}
+			a:hover {
+				background: white;
+			}
+			.content {				
+				background: rgba(255, 255, 255, 0.4);
+				width: 80%;
+				height: 300px;
+				margin: 0 auto;
+				margin-top: 20px;
+				border-radius: 5px;
+				padding: 20px 40px 20px 40px;
+				font-family:  'Amatic SC', cursive;
+				font-size: 20px;
+				text-align: left;
+			}
