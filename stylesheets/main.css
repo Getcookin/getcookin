@@ -1,9 +1,9 @@
 			body {
 				font-family: "arial narrow";
 				text-align: center;
-				background-image: url("../images/background.jpeg");
+				background-image: url("../images/background.jpg");
 				background-size: cover;
-				background-position: right;
+				background-position: right top;
 			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
