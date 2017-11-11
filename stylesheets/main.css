@@ -74,7 +74,24 @@
 				font-family:  'Amatic SC', cursive;
 				font-size: 24px;
 				text-align: left;
+				line-height: 30px;
 			}
 			.heading {
 				font-size: 36px;
+			}
+/*styling of subpage link divs*/
+			.recipes div {
+				border: 2px solid rgba(255, 255, 255, 0.6);
+				padding: 0 20px 0 20px;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			.recipes div:hover {
+				background: rgba(255, 255, 255, 0.8);
+				-webkit-transition: 0.3s ease-in-out;
+				-moz-transition: 0.3s ease-in-out;
+			}
+			.recipes a {
+				text-decoration: none;
+				color: black;
 			}
