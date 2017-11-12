@@ -76,6 +76,27 @@
 				text-align: left;
 				line-height: 30px;
 			}
+			.intro {
+				margin-top: 10px;
+				margin-bottom: 40px;
+				text-align: center;
+				font-size: 40px;
+			}
+/*filter function*/
+			.filter a {
+				padding-right: 20px;
+			}
+			.filter {
+				display: inline;
+				text-align: center;
+				padding: 10px;
+			}
+			.filter a:hover {
+				font-weight: bold;
+			}
+			.active {
+				font-weight: bold;
+			 }
 /*styling of subpage link divs*/
 			.recipes div {
 				border: 2px solid rgba(255, 255, 255, 0.6);
@@ -95,18 +116,3 @@
 			.heading {
 				font-size: 36px;
 			}
-/*filter function*/
-			.filter a {
-				padding-right: 20px;
-			}
-			.filter {
-				display: inline;
-				text-align: center;
-				padding: 10px;
-			}
-			.filter a:hover {
-				font-weight: bold;
-			}
-			.active {
-				font-weight: bold;
-			 }
