@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			/*overlay design*/
+			.overlay {
+				height: 100%;
+				width: 0;
+				position:fixed;
+				z-index: 1; /*slide in from left*/
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,0.8);
+				overflow-x: hidden;
+				transition: 0.5s;
+			}
+			.overlay-content {
+				position: relative;
+				top: 25%;
+				width: 100%;
+				text-align: center;
+				color: white;
+			}
+			.closebutton  {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: white;
+				text-decoration: none;
+			}
+			/*icon design*/
+			.tip {
+				visibility: hidden;
+				opacity: 0;
+				transition: opacity 1s;
+				background-color: rgba(0,0,0,0.8);
+				color: white;
+				padding: 5px;
+				border-radius: 6px;
+				font-size: 16px;
+				position: absolute;
+			}
+			.icon:hover .tip {
+				visibility: visible;
+				opacity: 1;
+			} 
+		</style>
+	</head>
+	<body>
+		<!--thermometer icon with tip-->
+		<div class="icon" style="font-size: 40px; cursor:pointer" onclick="openOverlayTemp()">
+			&#127777
+			<span class="tip">temperature converter</span>
+		</div>
+		<!--overlay for temperature converter-->
+		<div id="overlay-temp" class="overlay">
+			<a href="javascript:void(0)" class="closebutton" onclick="closeOverlayTemp()">&#10761;</a> <!--adds close button (unicode)-->
+			<div class="overlay-content">
+				<p>Enter the temperature you would like to convert:</p>
+				<p>
+				  <label>Fahrenheit</label>
+				  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+				</p>
+				<p>
+				  <label>Celsius</label>
+				  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+				</p>
+			</div>
+		</div>
+		<!--scale icon with tip-->
+		<div class="icon" style="font-size: 40px; cursor:pointer" onclick="openOverlayWeight()">
+		&#9878
+			<span class="tip">weight converter</span>
+		</div>
+		<!--overlay for weight converter-->
+		<div id="overlay-weight" class="overlay">
+			<a href="javascript:void(0)" class="closebutton" onclick="closeOverlayWeight()">&#10761;</a>
+			<div class="overlay-content">
+				<p>Enter the weights you would like to convert:</p>
+				<p>
+					<label>Pounds</label>
+					<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+				</p>
+				<p>
+					<label>Kilograms</label>
+					<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+				</p>
+				<p>
+					<label>Ounces</label>
+					<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+				</p>
+				<p>
+					<label>Grams</label>
+					<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+				</p>
+		</div>
+
+		<script>
+			/* overlay effect when clicking on thermometer icon */
+			function openOverlayTemp() {
+				document.getElementById("overlay-temp").style.width="100%";
+			}
+			function closeOverlayTemp() {
+				document.getElementById("overlay-temp").style.width="0%"
+			}
+			/* overlay effect when clicking on scale icon */
+			function openOverlayWeight() {
+				document.getElementById("overlay-weight").style.width="100%";
+			}
+			function closeOverlayWeight() {
+				document.getElementById("overlay-weight").style.width="0%"
+			}
+			/*temperature converter*/
+			function temperatureConverter(source,valNum) {
+				valNum = parseFloat(valNum);
+				var inputFahrenheit = document.getElementById("inputFahrenheit");
+				var inputCelsius = document.getElementById("inputCelsius");
+				if (source=="inputFahrenheit") {
+			    inputCelsius.value=((valNum-32)/1.8).toFixed(2);
+				}
+				if (source=="inputCelsius") {
+			    inputFahrenheit.value=((valNum*1.8)+32).toFixed(2);
+				}
+			}
+			/*weight converter*/
+			function weightConverter(source,valNum) {
+				valNum = parseFloat(valNum);
+				var inputPounds = document.getElementById("inputPounds");
+				var inputKilograms = document.getElementById("inputKilograms");
+				var inputOunces = document.getElementById("inputOunces");
+				var inputGrams = document.getElementById("inputGrams");
+				if (source=="inputPounds") {
+					inputKilograms.value=(valNum / 2.2046).toFixed(2);
+					inputOunces.value=(valNum * 16).toFixed(2);
+					inputGrams.value=(valNum / 0.0022046).toFixed(2);
+				}
+				if (source=="inputKilograms") {
+					inputPounds.value=(valNum * 2.2046).toFixed(2);
+					inputOunces.value=(valNum * 35.274).toFixed(2);
+					inputGrams.value=(valNum * 1000).toFixed(2);
+				}
+				if (source=="inputOunces") {
+					inputPounds.value=(valNum * 0.0625).toFixed(2);
+					inputKilograms.value=(valNum / 35.274).toFixed(2);
+					inputGrams.value=(valNum / 0.035274).toFixed(2);
+				}
+				if (source=="inputGrams") {
+					inputPounds.value=(valNum * 0.0022046).toFixed(2);
+					inputKilograms.value=(valNum / 1000).toFixed(2);
+					inputOunces.value=(valNum * 0.035274).toFixed(2);
+				}
+			}
+		</script>
+	</body>
+</html>
