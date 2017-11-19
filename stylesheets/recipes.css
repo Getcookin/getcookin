@@ -15,16 +15,17 @@
 			header p {
 				font-family: 'Fredericka the Great', cursive;
 				font-size: 48px;
-				line-height: 20px
+				line-height: 48px;
+				padding: 30px;
 			}
 	/*nav bar, collapses to drop down menu in smaller browsers*/
 			.nav {
 				background: rgba(255, 255, 255, 0.3);
-				padding: 10px;
 				overflow: hidden;
+				display: block;
 			}
 			.nav a {
-				padding: 10px 20px 10px 20px;
+				padding: 3px 20px 3px 20px;
 				text-decoration: none;
 				font-family: 'Amatic SC', cursive;
 				color: black;
@@ -64,7 +65,7 @@
 					text-align: left;
 				}
 			}
-			.wrapper {				
+			.container {				
 				background: rgba(255, 255, 255, 0.4);
 				width: 80%;
 				margin: 0 auto;
@@ -85,6 +86,7 @@
 /*filter function*/
 			.filter a {
 				padding-right: 20px;
+				color: black;
 			}
 			.filter {
 				display: inline;
@@ -93,6 +95,8 @@
 			}
 			.filter a:hover {
 				font-weight: bold;
+				color: black;
+				text-decoration: none;
 			}
 			.active {
 				font-weight: bold;
@@ -100,7 +104,7 @@
 /*styling of subpage link divs*/
 			.recipes div {
 				border: 2px solid rgba(255, 255, 255, 0.6);
-				padding: 0 20px 0 20px;
+				padding: 10px 20px 10px 20px;
 				margin-bottom: 20px;
 				margin-top: 20px;
 			}
@@ -109,7 +113,7 @@
 				-webkit-transition: 0.3s ease-in-out;
 				-moz-transition: 0.3s ease-in-out;
 			}
-			a {
+			.recipes a {
 				text-decoration: none;
 				color: black;
 			}
