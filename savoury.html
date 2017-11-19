@@ -3,7 +3,7 @@
 	<head>
 		<title>Get cookin' - a recipe collection</title>
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="stylesheets/main.css">
+		<link type="text/css" rel="stylesheet" href="stylesheets/recipes.css">
 	</head>
 	<body>
 		<header>
@@ -16,11 +16,44 @@
 				<a href="contact.html">Contact us</a>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</header>
-		<div class="content">
-			<p class="heading">this is for savoury recipes</p>
-			<p class="text">put some text here</p>
+		<div class="wrapper">
+			<div class="intro">Savoury recipes</div>
+		<!--filter function-->	
+			<div class="filter"> 
+				<a class="all active" href="#" onclick="reveal('all');">all recipes</a>
+				<a class="vegetarian" href="#" onclick="reveal('vegetarian');">vegetarian</a>
+				<a class="vegan" href="#" onclick="reveal('vegan');">vegan</a>
+				<a class="gf" href="#" onclick="reveal('gf');">gluten-free</a>
+			</div>
+			<div class="recipes">
+		<!--start of recipe link block-->
+				<a href="recipes/broccoli_cream_cheese.html">
+					<div  id="broccoli_cream_cheese" class="all vegetarian">
+						<p>
+							<span class="heading">Pasta with broccoli-cream cheese sauce</span></br>
+							<span class="text">
+								<em>Unusual colour - great taste!</em></br>
+								 - quick - easy
+							</span>
+						</p>
+					</div>
+				</a>
+				<a href="recipes/cucumber_tuna.html">
+					<div id="cucumber_tuna" class="all">
+						<p>
+							<span class="heading">Pasta with cucumber and tuna sauce</span></br>
+							<span class="text">
+								<em>A great combination of flavours - now available as pasta sauce...</em></br>
+								quick - easy
+							</span>
+						</p>
+					</div>
+				</a>
+			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
+			/*navigation*/
 			function myFunction() {
 			    var x = document.getElementById("nav");
 			    if (x.className === "nav") {
@@ -28,6 +61,13 @@
 			    } else {
 			        x.className = "nav";
 			    }
+			}
+			/*filter*/
+			function reveal(diettype) {
+				$('div.all').hide(); /*hide all*/
+				$('.'+diettype).show(); /*then show all with clicked diettype*/
+				$('a').removeClass("active"); /*remove active (=makes it bold) from all links*/
+				$('a.'+diettype).addClass("active"); /*adds active to clicked link, which makes it bold*/
 			}
 		</script>
 	</body>
