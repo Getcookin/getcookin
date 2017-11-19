@@ -1,0 +1,37 @@
+<html>
+<body>
+<script type="text/javascript">
+  function startTimer(){
+     var min = document.getElementById("minutes").value;
+     var sec = document.getElementById("seconds").value;
+     interval = setInterval(function(){
+       document.getElementById("output").innerHTML = "Remaining time: "+ min + " minutes " + sec + " seconds" ;
+      if(sec == 00)
+       {
+         min--;
+         sec = 60;
+       };
+        sec--;
+      if(min == 00)
+      {document.getElementById("output").innerHTML = "Remaining time: 0 minutes " + sec + " seconds" ;};
+      if(min <0)
+      {document.getElementById("output").innerHTML = "Time is up!";}
+      },1000);
+  }
+  function resetTimer(){
+    clearInterval(interval);
+    document.getElementById("output").innerHTML = "";
+    document.getElementById("minutes").value = "";
+    document.getElementById("seconds").value = "";
+  }
+</script>
+  <div id="timer">
+    minutes: <input type="text" id="minutes" placeholder="00"/>
+    seconds: <input type="text" id="seconds" placeholder="00"/>
+    <input type="button" value="Start" onclick="startTimer()" />
+    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
+    <input type="button" value="Reset" onclick="resetTimer()" />
+    <div id="output"></div>
+  </div>
+</body>
+</html>
