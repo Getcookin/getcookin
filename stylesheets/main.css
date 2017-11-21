@@ -5,23 +5,24 @@
 				background-size: cover;
 				background-position: right top;
 				background-attachment: fixed;
+				color: black;
 			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
-				padding: 10px 0 0 0;
+				padding-top: 10px;
 				text-align: center;
-				color: black;
+				margin-top: 10px;
 			}
 			header p {
 				font-family: 'Fredericka the Great', cursive;
 				font-size: 48px;
-				line-height: 20px
+				padding-top: 20px;
 			}
 	/*nav bar, collapses to drop down menu in smaller browsers*/
 			.nav {
 				background: rgba(255, 255, 255, 0.3);
-				padding: 10px;
 				overflow: hidden;
+				display: block;
 			}
 			.nav a {
 				padding: 10px 20px 10px 20px;
@@ -29,6 +30,7 @@
 				font-family: 'Amatic SC', cursive;
 				color: black;
 				font-size: 30px;
+				line-height: 48px;
 				-webkit-transition: 0.3s ease-in-out;
 				-moz-transition: 0.3s ease-in-out;
 			}
@@ -64,7 +66,8 @@
 					text-align: left;
 				}
 			}
-			.content {				
+	/*content section*/
+			.container {				
 				background: rgba(255, 255, 255, 0.4);
 				width: 80%;
 				margin: 0 auto;
@@ -76,6 +79,51 @@
 				text-align: left;
 				line-height: 30px;
 			}
-			.heading {
-				font-size: 36px;
+			.intro {
+				margin-top: 10px;
+				margin-bottom: 40px;
+				text-align: center;
+				font-size: 40px;
 			}
+	/*footer with social media share buttons*/
+			.footer {
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				padding: 20px;
+			}
+			.footer .fa {
+			    padding: 5px;
+			    margin: 10px;
+			    font-size: 32px;
+			    width: 45px;
+			    text-align: center;
+			    text-decoration: none;
+			    border-radius: 20%;
+				background: rgba(255, 255, 255, 0.1);
+				color: rgba(255, 255, 255, 1);
+				border: solid 2px rgba(255, 255, 255, 0.7);
+			}
+			.footer .fa:hover {
+				text-decoration: none;
+				color: rgba(255, 255, 255, 1);
+				-webkit-transition: 0.5s;
+				-moz-transition: 0.5s;
+			}
+			.fa-facebook:hover {
+				background: rgba(59,89,152,1);
+				border: solid 2px rgba(59,89,152,1);
+			}
+			.fa-pinterest:hover {
+				background: rgba(201,34,40,1);
+				border: solid 2px rgba(201,34,40,1);
+			}
+			.fa-twitter:hover {
+				background: rgba(0, 172, 237,1);
+				border: solid 2px rgba(0, 172, 237,1);
+			}
+			.fa-envelope:hover {
+				background: rgba(112,128,144,1);
+				border: solid 2px rgba(112,128,144,1);
+			}
+		
