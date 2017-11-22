@@ -10,48 +10,50 @@
 		<link type="text/css" rel="stylesheet" href="stylesheets/recipefilter.css">
 	</head>
 	<body>
-		<header>
-			<p>Get cookin'!</p>
-			<div class="nav" id="nav">
-				<a href="index.html">Home</a>
-				<a href="basics.html">Basics</a>
-				<a href="savoury.html">Savoury recipes</a>
-				<a href="sweet.html">Sweet recipes</a>
-				<a href="contact.html">Contact us</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-		</header>
-		<div class="container">
-			<div class="intro">Savoury recipes</div>
-		<!--filter function-->	
-			<div class="filter"> 
-				<a class="all active" href="#" onclick="reveal('all');">all recipes</a>
-				<a class="vegan" href="#" onclick="reveal('vegan');">vegan</a>
-				<a class="dairy-free" href="#" onclick="reveal('dairy-free');">dairy-free</a>
-				<a class="gf" href="#" onclick="reveal('gf');">gluten-free</a>
+		<div class="jumbotron jumbotron-fluid">
+			<header>
+				<p>Get cookin'!</p>
+				<div class="nav" id="nav">
+					<a href="index.html">Home</a>
+					<a href="basics.html">Basics</a>
+					<a href="savoury.html">Savoury recipes</a>
+					<a href="sweet.html">Sweet recipes</a>
+					<a href="contact.html">Contact us</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</header>
+			<div class="container">
+				<div class="intro">Savoury recipes</div>
+			<!--filter function-->	
+				<div class="filter"> 
+					<a class="all active" href="#" onclick="reveal('all');">all recipes</a>
+					<a class="vegan" href="#" onclick="reveal('vegan');">vegan</a>
+					<a class="dairy-free" href="#" onclick="reveal('dairy-free');">dairy-free</a>
+					<a class="gf" href="#" onclick="reveal('gf');">gluten-free</a>
+				</div>
+				<div class="recipes">
+			<!--start of recipe link block-->
+					<a href="">
+						<div  id="" class="all vegan">
+							<p>
+								<span class="heading">Some recipe</span></br>
+								<span class="text">
+									<em>Yum!</em></br>
+									 vegan - quick - easy
+								</span>
+							</p>
+						</div>
+					</a>
+				</div>
 			</div>
-			<div class="recipes">
-		<!--start of recipe link block-->
-				<a href="">
-					<div  id="" class="all vegan">
-						<p>
-							<span class="heading">Some recipe</span></br>
-							<span class="text">
-								<em>Yum!</em></br>
-								 vegan - quick - easy
-							</span>
-						</p>
-					</div>
-				</a>
+			<div class="footer">
+	    		<a href="https://twitter.com/home?status=getcookin.github.io/getcookin" class="fa fa-twitter"></a>
+	    		<a href="https://www.facebook.com/sharer/sharer.php?u=getcookin.github.io/getcookin" class="fa fa-facebook"></a>
+	    		<a href="" class="fa fa-pinterest"></a>
+	    		<a href="mailto:?subject=Check out this site!&amp;body=http://getcookin.github.io/getcookin" class="fa fa-envelope"></a>
 			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="javascript/nav.js"></script>
+			<script src="javascript/recipefilter.js"></script>
 		</div>
-		<div class="footer">
-    		<a href="https://twitter.com/home?status=getcookin.github.io/getcookin" class="fa fa-twitter"></a>
-    		<a href="https://www.facebook.com/sharer/sharer.php?u=getcookin.github.io/getcookin" class="fa fa-facebook"></a>
-    		<a href="" class="fa fa-pinterest"></a>
-    		<a href="mailto:?subject=Check out this site!&amp;body=http://getcookin.github.io/getcookin" class="fa fa-envelope"></a>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="javascript/nav.js"></script>
-		<script src="javascript/recipefilter.js"></script>
 	</body>
 </html>
