@@ -5,8 +5,12 @@
 				background-size: cover;
 				background-position: right top;
 				background-attachment: fixed;
-				z-index: -10;
 				color: black;
+			}
+			@media screen and (max-width: 645px) {
+			  	body {
+			  		background-attachment: initial;
+			  	}
 			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
