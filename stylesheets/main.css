@@ -7,11 +7,6 @@
 				color: black;
 				margin-bottom: 0;
 			}
-			@media screen and (max-width: 645px) {
-			  	body {
-			  		background-attachment: initial;
-			  	}
-			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
 				padding-top: 10px;
