@@ -1,22 +1,22 @@
-			.jumbotron {
+			body {
+				font-family: "arial narrow";
 				text-align: center;
 				background-image: url("../images/background.jpg");
 				background-size: cover;
 				background-position: right top;
 				background-attachment: fixed;
-				color: black;
-				margin-bottom: 0;
 			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
-				padding-top: 10px;
+				padding: 10px 0 0 0;
 				text-align: center;
-				margin-top: -40px;
+				color: black;
 			}
 			header p {
 				font-family: 'Fredericka the Great', cursive;
 				font-size: 48px;
-				padding-top: 20px;
+				line-height: 48px;
+				padding: 30px;
 			}
 	/*nav bar, collapses to drop down menu in smaller browsers*/
 			.nav {
@@ -25,12 +25,11 @@
 				display: block;
 			}
 			.nav a {
-				padding: 10px 20px 10px 20px;
+				padding: 3px 20px 3px 20px;
 				text-decoration: none;
 				font-family: 'Amatic SC', cursive;
 				color: black;
 				font-size: 30px;
-				line-height: 48px;
 				-webkit-transition: 0.3s ease-in-out;
 				-moz-transition: 0.3s ease-in-out;
 			}
@@ -39,7 +38,6 @@
 			}
 			.nav .icon {
     			display: none;
-    			padding: 0 15px 0 15px;
 			}
 			/*adjust max-width to minimum width of nav to prevent overflow*/
 			@media screen and (max-width: 645px) {
@@ -67,7 +65,6 @@
 					text-align: left;
 				}
 			}
-	/*content section*/
 			.container {				
 				background: rgba(255, 255, 255, 0.4);
 				width: 80%;
@@ -86,14 +83,11 @@
 				text-align: center;
 				font-size: 40px;
 			}
-	/*footer with social media share buttons*/
 			.footer {
 				width: 100%;
 				bottom: 0;
 				left: 0;
 				padding: 20px;
-				text-align: center;
-				margin-bottom: -60px;
 			}
 			.footer .fa {
 			    padding: 5px;
@@ -129,4 +123,41 @@
 				background: rgba(112,128,144,1);
 				border: solid 2px rgba(112,128,144,1);
 			}
-		
+			
+/*filter function*/
+			.filter a {
+				padding-right: 20px;
+				color: black;
+			}
+			.filter {
+				display: inline;
+				text-align: center;
+				padding: 10px;
+			}
+			.filter a:hover {
+				font-weight: bold;
+				color: black;
+				text-decoration: none;
+			}
+			.active {
+				font-weight: bold;
+			 }
+/*styling of subpage link divs*/
+			.recipes div {
+				border: 2px solid rgba(255, 255, 255, 0.6);
+				padding: 10px 20px 10px 20px;
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			.recipes div:hover {
+				background: rgba(255, 255, 255, 0.8);
+				-webkit-transition: 0.3s ease-in-out;
+				-moz-transition: 0.3s ease-in-out;
+			}
+			.recipes a {
+				text-decoration: none;
+				color: black;
+			}
+			.heading {
+				font-size: 36px;
+			}

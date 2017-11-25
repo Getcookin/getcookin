@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get cookin' - a recipe collection</title>
+		<link href='../bootstrap/css/bootstrap.css' rel='stylesheet'>
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
+	</head>
+	<body>
+		<header>
+			<p>Get cookin'!</p>
+			<div class="nav" id="nav">
+				<a href="index.html">Home</a>
+				<a href="basics.html">How to - Basics</a>
+				<a href="savoury.html">Savoury</a>
+				<a href="sweet.html">Sweet</a>
+				<a href="contact.html">Contact us</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</header>
+		<div class="container">		
+			<div id="broccoli_cream_cheese" class=""> 
+				<h2>Pasta with broccoli-cream cheese sauce</h2>
+				<p><em>Unusual colour - great taste!</em></p>
+				<table>
+					<tbody>
+						<tr>
+							<td>250g</td>
+							<td>pasta</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>broccoli</td>
+						</tr>
+						<tr>
+							<td>250ml</td>
+							<td>vegetable stock</td>
+						</tr>
+						<tr>
+							<td>100g</td>
+							<td>cream cheese</td>
+						</tr>
+						<tr>
+							<td>handful</td>
+							<td>ground almonds</td>
+						</tr>
+							<td>to taste</td>
+							<td>salt, pepper</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					Cook pasta in salted water until al dente.</br>
+					Meanwhile cut Brokkoli into chunks and steam in vegetable stock until tender.
+					Put some of the florets aside. Blend the rest with cream cheese and almonds and season with salt and pepper.</br>
+					Serve pasta with broccoli florets and sauce.
+				</p>
+			</div>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script>
+				/*navigation*/
+				function myFunction() {
+				    var x = document.getElementById("nav");
+				    if (x.className === "nav") {
+				        x.className += " responsive";
+				    } else {
+				        x.className = "nav";
+				    }
+				}
+				/*filter*/
+				function reveal(diettype) {
+					$('div.all').hide(); /*hide all*/
+					$('.'+diettype).show(); /*then show all with clicked diettype*/
+					$('a').removeClass("active"); /*remove active (=makes it bold) from all links*/
+					$('a.'+diettype).addClass("active"); /*adds active to clicked link, which makes it bold*/
+				}
+			</script>
+		</div>
+	</body>
+</html>
