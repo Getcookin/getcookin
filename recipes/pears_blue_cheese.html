@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get cookin' - a recipe collection</title>
+		<link href='../bootstrap/css/bootstrap.css' rel='stylesheet'>
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../icons/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../icons/themify/themify-icons.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/main.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+			<header>
+				<p>Get cookin'!</p>
+				<div class="nav" id="nav">
+					<a href="../index.html">Home</a>
+					<a href="../basics.html">Basics</a>
+					<a href="../savoury.html">Savoury recipes</a>
+					<a href="../sweet.html">Sweet recipes</a>
+					<a href="../contact.html">Contact us</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</header>
+			<div class="container">
+				<!--add after here-->
+				<div class="intro">Pasta with spicy pears and blue cheese</div>
+				<div class="row">
+					<div class="col-12 col-md-8 content">
+						<p class="table">
+						<table>
+							<tbody>
+								<tr>
+									<td>250g</td>
+									<td>pasta e.g. penne</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>pears (firm, not too juicy)</td>
+								</tr>
+								<tr>
+									<td>1 tsp</td>
+									<td>chili flakes</td>
+								</tr>
+								<tr>
+									<td>1 tbsp</td>
+									<td>butter</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>carott</td>
+								</tr>
+								<tr>
+									<td>1 tbsp</td>
+									<td>olive oil</td>
+								</tr>
+								<tr>
+									<td>200ml</td>
+									<td>milk</td>
+								</tr>
+								<tr>
+									<td>75g</td>
+									<td>blue cheese e.g. gorgonzola</td>
+								</tr>
+								<tr>
+									<td>to taste</td>
+									<td>salt, pepper</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+						<p>
+							1. Cook pasta in salted water until al dente.</br>
+							2. Peel the pears, cut into quarters and remove the seeds. Melt the butter in a large (lidded) pan, add pears and chili flakes and fry for a few minutes. Close the lid and cook until the pears are tender (around 20min). </br>
+							3. Peel and finely chop the carrot and saute in oil until tender. Add milk and turn off the heat when it starts to boil.</br>
+							4. Roughly chop the blue cheese and add it to the sauce; let it melt. </br>
+							5. Season to taste with salt and pepper and serve over pasta with spicy pears.
+						</p>
+					</div>
+					<!--end of recipe section-->
+					<div class="col-12 col-md-4">
+						<div class="converter">
+							<div id="toolbar">
+								<a class="icon fa fa-balance-scale" data-toggle="collapse" href="#collapse-weight" aria-expanded="false" aria-controls="collapse-weight" aria-hidden="true"><span class="tip">weight converter</span></a>
+								<a class="icon ti-paint-bucket" data-toggle="collapse" href="#collapse-volume" aria-expanded="false" aria-controls="collapse-volume" aria-hidden="true"><span class="tip">volume converter</span></a>
+								<a class="icon fa fa-thermometer-quarter" data-toggle="collapse" href="#collapse-temp" aria-expanded="false" aria-controls="collapse-temp" aria-hidden="true"><span class="tip">temperature converter</span></a>
+								<a class="icon ti-alarm-clock" data-toggle="collapse" href="#collapse-timer" aria-expanded="false" aria-controls="collapse-timer" aria-hidden="true"><span class="tip">timer</span></a>
+							</div>
+							<div class="collapse" id="collapse-weight">
+								<p>Enter the weights you would like to convert:</p>
+								<div class="form">
+									<p>
+										<label>Pounds</label>
+										<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Kilograms</label>
+										<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Ounces</label>
+										<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Grams</label>
+										<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-volume">
+								<p>Enter the volumes you would like to convert:</p>
+								<div class="form">
+									<p>
+										<label>liters</label>
+										<input id="inputLiters" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Milliliters</label>
+										<input id="inputMl" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>fluid Ounces</label>
+										<input id="inputFlOunces" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>pints (UK)</label>
+										<input id="inputPints" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>cups (US)</label>
+										<input id="inputCups" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-temp">
+								<p>Enter the temperature you would like to convert:</p>
+								<div class="form">
+									<p>
+									  <label>Fahrenheit</label>
+									  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+									<p>
+									  <label>Celsius</label>
+									  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-timer">
+								<p>
+								<input type="text" id="minutes" placeholder="min"/><strong> :</strong>
+							    <input type="text" id="seconds" placeholder="sec"/></br>
+							    <input type="button" value="Start" onclick="startTimer()" />
+							    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
+							    <input type="button" value="Reset" onclick="resetTimer()" />
+							    <div id="output"></div>
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="footer">
+	    		<a href="https://twitter.com/home?status=getcookin.github.io/getcookin" class="fa fa-twitter"></a>
+	    		<a href="https://www.facebook.com/sharer/sharer.php?u=getcookin.github.io/getcookin" class="fa fa-facebook"></a>
+	    		<a href="" class="fa fa-pinterest"></a>
+	    		<a href="mailto:?subject=Check out this site!&amp;body=http://getcookin.github.io/getcookin" class="fa fa-envelope"></a>
+	    	</div>
+
+	    	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="../javascript/nav.js"></script>
+			<script src="../javascript/converters.js"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>
