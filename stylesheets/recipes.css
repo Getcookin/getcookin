@@ -1,163 +1,67 @@
-			body {
-				font-family: "arial narrow";
-				text-align: center;
-				background-image: url("../images/background.jpg");
-				background-size: cover;
-				background-position: right top;
-				background-attachment: fixed;
-			}
-			header {
-				background: rgba(255, 255, 255, 0.3);
-				padding: 10px 0 0 0;
-				text-align: center;
-				color: black;
-			}
-			header p {
-				font-family: 'Fredericka the Great', cursive;
-				font-size: 48px;
-				line-height: 48px;
-				padding: 30px;
-			}
-	/*nav bar, collapses to drop down menu in smaller browsers*/
-			.nav {
-				background: rgba(255, 255, 255, 0.3);
-				overflow: hidden;
-				display: block;
-			}
-			.nav a {
-				padding: 3px 20px 3px 20px;
-				text-decoration: none;
-				font-family: 'Amatic SC', cursive;
-				color: black;
-				font-size: 30px;
-				-webkit-transition: 0.3s ease-in-out;
-				-moz-transition: 0.3s ease-in-out;
-			}
-			.nav a:hover {
-				background: white;
-			}
-			.nav .icon {
-    			display: none;
-			}
-			/*adjust max-width to minimum width of nav to prevent overflow*/
-			@media screen and (max-width: 645px) {
-			  	.nav a {
-			  		display: none;
-			  	}
-			  	.nav {
-			  		padding: 0;
-			  	}
-			  	.nav a.icon {
-			    	float: right;
-			    	display: block;
-			   	}
-				.nav.responsive {
-					position: relative;
-				}
-				.nav.responsive a.icon {
-					position:absolute;
-					right:0;
-					top:0;
-				}
-				.nav.responsive a {
-					float:none;
-					display: block;
-					text-align: left;
-				}
-			}
-			.container {				
-				background: rgba(255, 255, 255, 0.4);
-				width: 80%;
-				margin: 0 auto;
-				margin-top: 20px;
-				border-radius: 5px;
-				padding: 20px 40px 20px 40px;
-				font-family:  'Amatic SC', cursive;
-				font-size: 24px;
-				text-align: left;
-				line-height: 30px;
-			}
-			.intro {
-				margin-top: 10px;
-				margin-bottom: 40px;
-				text-align: center;
-				font-size: 40px;
-			}
-			.footer {
-				width: 100%;
-				bottom: 0;
-				left: 0;
-				padding: 20px;
-			}
-			.footer .fa {
-			    padding: 5px;
-			    margin: 10px;
-			    font-size: 32px;
-			    width: 45px;
-			    text-align: center;
-			    text-decoration: none;
-			    border-radius: 20%;
-				background: rgba(255, 255, 255, 0.1);
-				color: rgba(255, 255, 255, 1);
-				border: solid 2px rgba(255, 255, 255, 0.7);
-			}
-			.footer .fa:hover {
-				text-decoration: none;
-				color: rgba(255, 255, 255, 1);
-				-webkit-transition: 0.5s;
-				-moz-transition: 0.5s;
-			}
-			.fa-facebook:hover {
-				background: rgba(59,89,152,1);
-				border: solid 2px rgba(59,89,152,1);
-			}
-			.fa-pinterest:hover {
-				background: rgba(201,34,40,1);
-				border: solid 2px rgba(201,34,40,1);
-			}
-			.fa-twitter:hover {
-				background: rgba(0, 172, 237,1);
-				border: solid 2px rgba(0, 172, 237,1);
-			}
-			.fa-envelope:hover {
-				background: rgba(112,128,144,1);
-				border: solid 2px rgba(112,128,144,1);
-			}
-			
-/*filter function*/
-			.filter a {
-				padding-right: 20px;
-				color: black;
-			}
-			.filter {
-				display: inline;
-				text-align: center;
-				padding: 10px;
-			}
-			.filter a:hover {
-				font-weight: bold;
-				color: black;
-				text-decoration: none;
-			}
-			.active {
-				font-weight: bold;
-			 }
-/*styling of subpage link divs*/
-			.recipes div {
-				border: 2px solid rgba(255, 255, 255, 0.6);
-				padding: 10px 20px 10px 20px;
-				margin-bottom: 20px;
-				margin-top: 20px;
-			}
-			.recipes div:hover {
-				background: rgba(255, 255, 255, 0.8);
-				-webkit-transition: 0.3s ease-in-out;
-				-moz-transition: 0.3s ease-in-out;
-			}
-			.recipes a {
-				text-decoration: none;
-				color: black;
-			}
-			.heading {
-				font-size: 36px;
-			}
+.content {
+	padding-left: 20px;
+}
+table td {
+	padding: 2px 7px;
+}
+.converter {
+	border: 3px solid rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	padding: 10px;
+}
+#toolbar {
+	text-align: center;
+	display: block;
+}
+.converter a {
+	color: black;
+	text-decoration: none;
+	margin: 10px;
+}
+.converter p {
+	font-size: 25px;
+	padding: 0 10px;
+}
+.form p {
+	text-align: right;
+	font-size: 20px;
+}
+.form {
+	display: inline-block;
+}
+#output {
+	font-size: 20px;
+}
+.tip {
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 6px;
+	padding: 4px;
+	position: absolute;
+	margin-left: -60px;
+	bottom: 98%;
+}
+.icon:hover .tip {
+	visibility: visible;
+	opacity: 1;
+} 
+#collapse-timer {
+	text-align: center;
+}
+#collapse-timer input[type=text] {
+	padding: 2px;
+	width: 50px;
+	text-align:center;
+}
+#collapse-timer input[type=button] {
+	margin: 5px;
+}
+img {
+	height: 300px;
+	float: right;
+}

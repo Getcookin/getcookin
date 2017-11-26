@@ -13,13 +13,13 @@
 				color: black;
 				text-decoration: none;
 			}
-			.filter.active {
+			.filter .active {
 				font-weight: bold;
 			 }
 /*styling of subpage link divs*/
 			.recipes div {
 				border: 2px solid rgba(255, 255, 255, 0.6);
-				padding: 10px 20px 10px 20px;
+				padding: 10px 20px 0px 20px;
 				margin-bottom: 20px;
 				margin-top: 20px;
 			}

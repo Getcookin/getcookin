@@ -1,0 +1,15 @@
+label {
+ font-size: 25px;
+}
+.form-control {
+	font-size: 20px;
+}
+.button {
+	background: rgba(56, 163, 46, 1);
+	border: 0;
+	border-radius: 3px;
+	padding: 3px 6px;
+	font-size: 20px;
+	color: white;
+	margin-left: 30px;
+}
