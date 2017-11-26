@@ -24,6 +24,7 @@ table td {
 }
 .form p {
 	text-align: right;
+	font-size: 20px;
 }
 .form {
 	display: inline-block;
@@ -59,4 +60,8 @@ table td {
 }
 #collapse-timer input[type=button] {
 	margin: 5px;
+}
+img {
+	height: 300px;
+	float: right;
 }
