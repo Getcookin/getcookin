@@ -1,0 +1,10 @@
+.row {
+	width: 80%;
+	text-align: center;
+}
+img {
+	width: 300px;
+}
+.col-sm {
+	margin: auto 0;
+}
