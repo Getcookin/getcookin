@@ -7,6 +7,11 @@
 				color: black;
 				margin-bottom: 0;
 			}
+			@media screen and (max-width: 645px) {
+				.jumbotron {
+					background-size: auto 100vh;
+				}
+			}
 			header {
 				background: rgba(255, 255, 255, 0.3);
 				padding-top: 10px;
@@ -43,7 +48,7 @@
 			}
 			/*adjust max-width to minimum width of nav to prevent overflow*/
 			@media screen and (max-width: 645px) {
-			  	.nav a {
+				.nav a {
 			  		display: none;
 			  	}
 			  	.nav {
@@ -75,11 +80,16 @@
 				margin-top: 20px;
 				border-radius: 5px;
 				padding: 20px 40px 20px 40px;
-				font-family:  'Amatic SC', cursive;
+				font-family: 'Amatic SC', cursive;
 				font-size: 24px;
 				text-align: left;
 				line-height: 30px;
 			}
+			@media screen and (max-width: 645px) {
+				.container {
+					width: 95%;
+				}
+
 			.intro {
 				margin-top: 10px;
 				margin-bottom: 40px;
