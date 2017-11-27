@@ -46,7 +46,31 @@ table td {
 	margin-left: -60px;
 	bottom: 98%;
 }
+.protip {
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	border-radius: 6px;
+	padding: 4px;
+	left: 105%;
+	top: -5px;
+	max-width: 200px;
+	width: 200px;
+	display: block; 
+	position: absolute;
+}
+.thing {
+	position: relative;
+}
 .icon:hover .tip {
+	visibility: visible;
+	opacity: 1;
+} 
+.thing:hover .protip {
 	visibility: visible;
 	opacity: 1;
 } 
