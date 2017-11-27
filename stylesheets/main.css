@@ -9,7 +9,7 @@
 			}
 			@media screen and (max-width: 645px) {
 				.jumbotron {
-					background-size: auto 100vh;
+					background-attachment: scroll;
 				}
 			}
 			header {
@@ -89,7 +89,6 @@
 				.container {
 					width: 95%;
 				}
-
 			.intro {
 				margin-top: 10px;
 				margin-bottom: 40px;
