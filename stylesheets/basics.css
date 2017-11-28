@@ -1,10 +1,28 @@
 .row {
 	width: 80%;
 	text-align: center;
+	margin: 0 auto;
 }
 img {
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
+	position: relative;
+	display: block;
 }
-.col-sm {
-	margin: auto 0;
+h3 {
+	text-align: center;
+	font-size: 32px;
+}
+p {
+	display: block;
+}
+.number {
+	position: absolute;
+	top: 8px;
+	left: 25px;
+	font-weight: bold;
+	font-size: 20px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 100%;
+	padding: 0 12px;
 }
