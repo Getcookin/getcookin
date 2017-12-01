@@ -13,8 +13,9 @@ h3 {
 	text-align: center;
 	font-size: 32px;
 }
-p {
+.col-sm p {
 	display: block;
+	width: 300px;
 }
 .number {
 	position: absolute;
@@ -25,4 +26,11 @@ p {
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 100%;
 	padding: 0 12px;
+}
+.mb-0 a {
+	text-decoration: none;
+	color: black;
+}
+.card {
+	background: rgba(255, 255, 255, 0);
 }
