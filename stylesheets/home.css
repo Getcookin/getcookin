@@ -10,9 +10,10 @@
 	bottom: -10px;
 }
 .intro {
+	font-size: 35px;
 	line-height: 40px;
 }
 .signoff {
 	text-align: right;
-	font-size: 40px;
+	font-size: 28px;
 }
