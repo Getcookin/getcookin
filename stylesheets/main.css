@@ -102,6 +102,11 @@
 				margin-bottom: 40px;
 				text-align: center;
 				font-size: 40px;
+				line-height: 40px;
+			}
+			.signoff {
+				text-align: right;
+				font-size: 40px;
 			}
 	/*footer with social media share buttons*/
 			.footer {
