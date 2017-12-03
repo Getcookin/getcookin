@@ -7,14 +7,11 @@
 				color: black;
 				margin-bottom: 0;
 			}
-<<<<<<< HEAD
 			@media screen and (max-width: 645px) {
 				.jumbotron {
 					background-size: auto 100vh;
 				}
 			}
-=======
->>>>>>> master
 			header {
 				background: rgba(255, 255, 255, 0.3);
 				padding-top: 10px;
@@ -92,11 +89,7 @@
 				.container {
 					width: 95%;
 				}
-<<<<<<< HEAD
-
-=======
 			}
->>>>>>> master
 			.intro {
 				margin-top: 10px;
 				margin-bottom: 40px;
