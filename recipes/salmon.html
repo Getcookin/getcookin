@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Get cookin' - a recipe collection</title>
+		<link href='../bootstrap/css/bootstrap.css' rel='stylesheet'>
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="../icons/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../icons/themify/themify-icons.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/main.css">
+		<link type="text/css" rel="stylesheet" href="../stylesheets/recipes.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+			<header>
+				<p>Get cookin'!</p>
+				<div class="nav" id="nav">
+					<a href="../index.html">Home</a>
+					<a href="../basics.html">Basics</a>
+					<a href="../savoury.html">Savoury recipes</a>
+					<a href="../sweet.html">Sweet recipes</a>
+					<a href="../contact.html">Contact us</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</header>
+			<div class="container">
+				<!--add after here-->
+				<div class="intro">Salmon</div>
+				<div class="row">
+					<div class="col-12 col-md-8 content">
+						<p class="table">
+						<table>
+							<tbody>
+								<tr>
+									<td>1 </td>
+									<td>salmon fillet</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>salt</td>
+								</tr>
+											<tr>
+									<td>1 tbsp</td>
+									<td>oil</td>
+								</tr>
+								<tr>
+									<td>1 clove</td>
+									<td>garlic</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+						<p>
+							1. Ensure your salmon is at room temperature </br>
+							2. Add a pinch of salt to both sides of the salmon </br>
+							3. On the skin-side, hold both ends of the salmon while it is flat, and push them together to create a slight bulge. With a knife, slice 3 lines on the skin (not too deep), this will allow the salmon to cook more evenly </br>
+							4. Add oil to pan, heat on medium-low </br>
+							5. Slowly place salmon onto pan, skin down first </br>
+							6. Leave salmon to cook for about 3min, watch as you will see it gradually change colour</br>
+							7. flip salmon slowly once the colour change has occured up to half-way on the steak</br>
+							8. Add garlic</br>
+							8. Leave to cook for about 5 more min, without moving salmon<a href= "" class="thing"> <strong> * </strong> <span class="protip">
+								<strong> PRO TIP: </strong> You don't want it to break apart!</span> </a> </br>
+						
+						</p>
+					</div>
+					<!--end of recipe section-->
+					<div class="col-12 col-md-4">
+						<div class="converter">
+							<div id="toolbar">
+								<a class="icon fa fa-balance-scale" data-toggle="collapse" href="#collapse-weight" aria-expanded="false" aria-controls="collapse-weight" aria-hidden="true"><span class="tip">weight converter</span></a>
+								<a class="icon ti-paint-bucket" data-toggle="collapse" href="#collapse-volume" aria-expanded="false" aria-controls="collapse-volume" aria-hidden="true"><span class="tip">volume converter</span></a>
+								<a class="icon fa fa-thermometer-quarter" data-toggle="collapse" href="#collapse-temp" aria-expanded="false" aria-controls="collapse-temp" aria-hidden="true"><span class="tip">temperature converter</span></a>
+								<a class="icon ti-alarm-clock" data-toggle="collapse" href="#collapse-timer" aria-expanded="false" aria-controls="collapse-timer" aria-hidden="true"><span class="tip">timer</span></a>
+							</div>
+							<div class="collapse" id="collapse-weight">
+								<p>Enter the weights you would like to convert:</p>
+								<div class="form">
+									<p>
+										<label>Pounds</label>
+										<input id="inputPounds" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Kilograms</label>
+										<input id="inputKilograms" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Ounces</label>
+										<input id="inputOunces" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Grams</label>
+										<input id="inputGrams" type="number" oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-volume">
+								<p>Enter the volumes you would like to convert:</p>
+								<div class="form">
+									<p>
+										<label>liters</label>
+										<input id="inputLiters" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>Milliliters</label>
+										<input id="inputMl" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>fluid Ounces</label>
+										<input id="inputFlOunces" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>pints (UK)</label>
+										<input id="inputPints" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+									<p>
+										<label>cups (US)</label>
+										<input id="inputCups" type="number" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-temp">
+								<p>Enter the temperature you would like to convert:</p>
+								<div class="form">
+									<p>
+									  <label>Fahrenheit</label>
+									  <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+									<p>
+									  <label>Celsius</label>
+									  <input id="inputCelsius" type="number" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+									</p>
+								</div>
+							</div>
+							<div class="collapse" id="collapse-timer">
+								<p>
+								<input type="text" id="minutes" placeholder="min"/><strong> :</strong>
+							    <input type="text" id="seconds" placeholder="sec"/></br>
+							    <input type="button" value="Start" onclick="startTimer()" />
+							    <input type="button" value="Stop" onclick="clearInterval(interval)"/>
+							    <input type="button" value="Reset" onclick="resetTimer()" />
+							    <div id="output"></div>
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="footer">
+	    		<a href="https://twitter.com/home?status=getcookin.github.io/getcookin" class="fa fa-twitter"></a>
+	    		<a href="https://www.facebook.com/sharer/sharer.php?u=getcookin.github.io/getcookin" class="fa fa-facebook"></a>
+	    		<a href="" class="fa fa-pinterest"></a>
+	    		<a href="mailto:?subject=Check out this site!&amp;body=http://getcookin.github.io/getcookin" class="fa fa-envelope"></a>
+	    	</div>
+
+	    	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="../javascript/nav.js"></script>
+			<script src="../javascript/converters.js"></script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>
