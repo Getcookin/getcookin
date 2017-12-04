@@ -1,0 +1,40 @@
+.row {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+img {
+	width: 100%;
+	max-width: 300px;
+	position: relative;
+	display: block;
+}
+h3 {
+	text-align: center;
+	font-size: 32px;
+}
+.col-sm p {
+	display: block;
+	width: 300px;
+}
+.number {
+	position: absolute;
+	top: 8px;
+	left: 25px;
+	font-weight: bold;
+	font-size: 20px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 100%;
+	padding: 0 12px;
+}
+.mb-0 a {
+	text-decoration: none;
+	color: black;
+}
+.card {
+	background: rgba(255, 255, 255, 0);
+}
+#description {
+	font-size: 28px;
+	text-align: center;
+}
