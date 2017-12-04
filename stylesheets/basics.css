@@ -34,3 +34,7 @@ h3 {
 .card {
 	background: rgba(255, 255, 255, 0);
 }
+#description {
+	font-size: 28px;
+	text-align: center;
+}
